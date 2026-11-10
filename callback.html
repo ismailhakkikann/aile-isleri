@@ -1,0 +1,7 @@
+<!doctype html><html lang="tr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aile İşleri · TikTok bağlantısı</title>
+<body style="font-family:system-ui;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6">
+<h1>TikTok bağlantısı</h1><p id="m">Yetkilendirme tamamlanıyor…</p>
+<script>
+const q=new URLSearchParams(location.search);
+document.getElementById('m').textContent=q.get('code')?'Bağlantı onaylandı. Bu sekmeyi kapatabilirsiniz; yükleme aracı kodu otomatik alır.':('Bağlantı tamamlanmadı: '+(q.get('error_description')||q.get('error')||'kod yok'));
+</script></body></html>
